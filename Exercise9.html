@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Registration Form Milyn</title>
+		<meta name="author" content="Milyn Dagusen" />
+		<meta name="description" content="" />
+	</head>
+    <body>
+        <h1></h1>
+    </body>
+    <form>
+        <fieldset>
+        <legend><h4>Your Details</h4></legend>
+        <label for ="name">Name:*</label> 
+            <input type="text" size="35" max="25"
+            name="Name" placeholder="Enter name" required/><br/>
+        <label for ="Email">Email:*</label> 
+            <input type="text" size="35" max="25"
+            name="Email" placeholder="ex. alpha@borntobeat.com" required/><br/>
+        <label for ="phone">Phone:*</label> 
+            <input type="text" size="35" min="11" max="15"
+            name="Phone" placeholder="Please enter your mobile phone number" required/><br/>
+        </fieldset>
+
+        <fieldset>
+        <legend><h4>Delivery Address</h4></legend>
+        <label for ="Continent">Continent:*</label>
+            <select id ="Continent">
+                <option value="--Choose your region--">--Choose your continent--</option>
+                <option value="Asia">Asia</option>
+                <option value="Africa">Africa</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Australia">Australia</option>
+                <option value="Antartica">Antartica</option>
+        <label for ="address">Address:*</label>
+            <input type="text" size="35" max="25"
+            name="Address" placeholder="House/Apt.Number, Street, City, Province" required/><br/>
+        <label for ="Code">Postal Code:*</label>
+            <input type="text" size="35" max="25"
+            name="Code" required/><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend><h4>Membership Information</h4></legend>
+        <label for ="name">Username:*</label> 
+            <input type="text" size="35" min="7" max="20"
+            name="Username" placeholder="At least 7 alphanumeric characters" required/><br/>
+        <label for="pwd">Password:*</label>
+            <input type="password" id="pwd" name="pwd" required/><br/>
+        <label for="mbs">Membership:</label>
+            <input type="checkbox" id="1st" name="1st" value="1stGen">
+        <label for="1st">1st Generation membership</label><br>
+            <input type="checkbox" id="2st" name="2st" value="1stGen">
+        <label for="2st">2nd Generation membership</label><br>
+            <input type="checkbox" id="3st" name="3st" value="1stGen">
+        <label for="3st">3rd Generation membership</label><br>
+            <input type="checkbox" id="4st" name="4st" value="1stGen">
+        <label for="4st">4th Generation membership</label><br>
+            <input type="checkbox" id="5st" name="5st" value="1stGen">
+        <label for="5st">5th Generation membership</label><br>
+        <input type="submit">
+        </fieldset>
+
+</html>
