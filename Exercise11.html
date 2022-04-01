@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<hlml lang = "en">
+    <head>
+        <title>Exercise11.css</title>
+        <meta charset = "utf-8">
+        <meta name ="viewport" content="width-device-width, initial-scale-1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 45px;
+                background-color:azure;
+            }
+            header {
+                background-color: azure;
+                text-align: center;
+                height: 250px;
+                width: 250px;
+                float: left;
+                margin: 40px;
+            }
+            nav {
+                float: center;
+                overflow: hidden;
+                background-color: midnightblue;
+                width: 80%;
+                height: 100%;
+                border-style: solid;
+                margin: 40px;
+            }
+            nav a {
+                float: left;
+                display:table-cell;
+                color: aqua;
+                text-align: center;
+                padding: 15px 20px;
+                text-decoration: none;
+                border: 20px;
+            }
+            nav a:hover {
+                background-color: rgb(126, 193, 252);
+                color: aquamarine;
+            }
+            section {
+                float: none;
+                width: 90%;
+                padding: 20px;
+                resize: both;
+                overflow: auto;
+                clear: both;
+                border-style: solid;
+                margin: 60px;
+            }
+            #section1 {
+                border: 2px royalblue;
+                background-color: teal;
+                background-image:url("https://dbkpop.com/wp-content/uploads/2018/06/btob_this_is_us_all_profile.jpg");
+                background-repeat: no-repeat;
+                font-family: sans-serif; 
+            }
+            #section2 {
+                border: 2px royalblue;
+                background-color: teal;
+                background-image: "https://m.media-amazon.com/images/M/MV5BZmEwZmE4ZDQtNmVkZS00NTFiLThiZjUtODY1YmM3NWEzMTRhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg";
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: sans-serif; 
+            }
+            #section3 {
+                border: 2px royalblue;
+                background-color: teal;
+                background-image: "https://deadline.com/wp-content/uploads/2021/08/911_Group_Finish_RD13_V1-e1628008693656.jpg";
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: sans-serif; 
+            }
+
+            @media screen and (max-width: 600px){
+                section {
+                    width: 100%;
+                }
+            }
+            footer {
+                background-color: azure;
+                text-align: left;
+                padding: 20px;
+            }
+            article{
+                clear: both;
+                border-color: royalblue;
+                border-style: solid;
+            }
+        </style> 
+    </head>
+    <body>
+        <div>
+        <header>
+        <img src = "https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/272442625_2398946050241303_8798368705076365325_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHZSfoI3mQMbFhnHtokNrvBaU_ZV4n-ZRVpT9lXif5lFfQMtMXgR5D4sg9TQoQEPLxkgRME3NoNNkYooix_sux8&_nc_ohc=nHYXjqF0DMUAX8xK9jC&_nc_ht=scontent.fmnl25-1.fna&oh=00_AT9V44M0zQl2JCqfOAr94yPt74EoPIwAxRPk_2KvTso5pQ&oe=624C0CAA"
+        width = "150px"
+        height = "150px">
+        </header>
+
+        <nav>
+            <a href="#1">Group</a>
+            <a href="#2">Drama</a>
+            <a href="#3">Series</a>
+            <a href="#4">References</a>
+        </nav>
+        </div>
+        <article>
+            <center><h1><b>MY FAVORITES</center></h1></b>
+            <section id="#1">
+                <h2>Born To Beat (BTOB)</h2>
+                <p>A k-pop boy band created by Vube Entertainment, BTOB 
+                    debuted in March 2012 and rose to mainstream success over the next years
+                    with a chart-topping releases like 2014's Beep Beep EP and the 2015
+                    album Complete. BTOB debuted as a seven member group consisting
+                    Seo Eunkwang, Lee Minhyuk, Lee Changsub, Im Hyunsik, Peniel, Yook Sungjae 
+                    and Jung Ilhoon. 
+                </p>
+            </section>
+            <section id="#2">
+                <h2>Sen Çal Kapimi</h2>
+                <p>Eda, who pins all her hopes on her education, confronts Serkan Bolat, 
+                    who has cut off her international scholarship, which leaves her with a high school 
+                    diploma only. Serkan offers Eda to give her scholarship back on condition that she 
+                    pretends to be his fiancée for two months. Although Eda initially rejects the offer 
+                    out of hand, she sees herself compelled to accept it when conditions change overnight. 
+                    While pretending to be engaged, Serkan and Eda embark on an insanely passionate yet 
+                    challenging relationship that will make them forget all they know that is right.</p>
+            </section>
+            <section id="#3">
+                <h2>911</h2>
+                <p>The series explores the high-pressure experiences of first responders -- 
+                    including police officers, firefighters and dispatchers -- who are thrust into the 
+                    most frightening, shocking and heart-stopping situations. These emergency responders 
+                    must try to balance saving those who are at their most vulnerable with solving the 
+                    problems in their own lives. The show draws from real-life, high-pressure experiences 
+                    of first responders who regularly face heart-stopping situations that are often 
+                    unpredictable, intense and uplifting at the same time.</p>
+            </section>
+        </article>
+        <footer>
+        <h3 id="#4">MY REFERENCES</h3>
+        <h4>Links: </h4>
+            <p><a href="https://open.spotify.com/artist/2hcsKca6hCfFMwwdbFvenJ" target="_blank">https://open.spotify.com/artist/2hcsKca6hCfFMwwdbFvenJ</a></p>
+            <p><a href="https://superriki.net/series/sen-cal-kapimi-you-knock-on-my-door/" target ="_blank">https://superriki.net/series/sen-cal-kapimi-you-knock-on-my-door/</a></p>
+            <p><a href="https://www.fox.com/9-1-1/" target="_blank">https://www.fox.com/9-1-1/</a></p>
+        </footer>
+    </body>
+</hlml>
