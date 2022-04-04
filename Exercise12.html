@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Exercise12</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        div.header{
+            position:relative;
+            height: 50px;
+            border: 3px solid red;
+            text-align: center;
+        }
+        div.nav1{
+            position:sticky;
+            width: 100%;
+            bottom: 100px;
+            border: 3px solid green;
+            text-align: center;
+        }
+        div.footer{
+            position: relative;
+            height: 50px;
+            border: 3px solid red;
+            text-align: center;
+        }
+        #sectionleft{
+            flex-grow: 1;
+            border: solid 3px orange;
+            padding: 15px;
+            float: left;
+            height: auto;
+            position: relative;
+            width: 100%;
+        }
+        .inside {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            position: sticky;
+            width: 100%;
+            padding: 50px;
+        }
+        .inside div{
+            flex-grow: 1;
+            margin: auto;
+            border: solid 2px red;
+            height: 100%;
+            position: sticky;
+            width: 100%;
+            padding: 100%;
+        }  
+        #sectionright {
+            flex-grow: 1;
+            border: solid 3px black;
+            padding: 15px;
+            float: left;
+            position:relative;
+            width: 100%;
+            height: auto;
+        }
+        #header {
+            flex-grow: 1;
+            border: solid 3px rgb(37, 25, 25);
+            padding: 100px;
+            float: right;
+            position: sticky;
+            width: 100%;
+            height: 50%;
+        }
+        #article {
+            flex-grow: 1;
+            border: solid 3px rgb(71, 68, 68);
+            float: right;
+            padding: 50px;
+            height: auto;
+            position: sticky;
+            width: 100%;
+        }
+        .outside {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        position: sticky;
+        width: 100%;
+        }
+        .outside div {
+        flex-grow: 1;
+        margin: auto;
+        border: solid 1px red;
+        height: 100%;
+        position: sticky;
+        width: 100%;
+        padding: 100px;
+        }
+        #article2 {
+        flex-grow: 1;
+        border: solid 1px black;
+        float: right;
+        padding: 50px;
+        height: auto;
+        position: sticky;
+        width: 100%;
+        }
+        .beside {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        position: sticky;
+        width: 100%;
+        }
+        .beside div {
+        flex-grow: 1;
+        margin: auto;
+        border: solid 1px red;
+        height: 100%;
+        position: sticky;
+        width: 100%;
+        padding: 100px;
+        }
+    </style>
+    <body>
+        <div class="header1">header</div>
+        <div class="nav1">nav</div>
+
+
+        <div id="sectionleft">
+        section
+        <div class="inside">
+            <div id="headeright">
+                header
+            </div>
+            <div id="navright">
+                nav
+            </div>
+            <div id="footeright">
+                footer
+            </div>
+        </div>
+    </div>
+        <div id="sectionright">
+    section
+    <div class="outside">
+        <div id="headerleft">
+            header
+        </div>
+        <div id="article">
+            arcticle
+            <div class="outside">
+                <div id="headeright">
+                    header
+                </div>
+                <div id="pright">
+                    p
+                </div>
+                <div id="pright2">
+                    p
+                </div>
+                <div id="footeright">
+                    footer
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="article2">
+        arcticle
+        <div class="beside">
+            <div id="headerleft">
+                header
+            </div>
+            <div id="plright">
+                p
+            </div>
+            <div>aside</div>
+            <div id="footerleft">
+                footer
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">footer</div>
+    </body>
+    </head>
+    </html>
