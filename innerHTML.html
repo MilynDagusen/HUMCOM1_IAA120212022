@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Using InnerHTMLdocument.write</title>
+        <title>Using InnerHTML</title>
     <body>
-        <h2>Hello</h2>
-        <h2>How are you today?</h2>
+        <h2 id="Target">Hello</h2>
         <script>
-            document.write("Goodbye");
+            document.getElementById("Target").innerHTML="Goodbye";
         </script>
     </body>
 </html>
